@@ -1,106 +1,44 @@
-
 {
-  "fpsLimit": 60,
-  "particles": {
-    "number": {
-      "value": 100,
-      "limit": 100,
-      "density": {
-        "enable": true
-      }
-    },
-    "color": {
-      "value": "#000000"
-    },
-    "shape": {
-      "type": "circle",
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0.5,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 80,
-      "random": true
-    },
-    "lineLinked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#000000",
-      "opacity": 1,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 3,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false
-    }
-  },
   "interactivity": {
-    "detect_on": "window",
     "events": {
+      "onClick": { "enable": false, "mode": "push" },
       "onHover": {
         "enable": true,
-        "mode": "bubble"
-      },
-      "onClick": {
-        "enable": false,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
-      "grab": {
-        "distance": 400,
-        "lineLinked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 200,
-        "duration": 2,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
+      "push": { "quantity": 4 },
+      "repulse": { "distance": 100, "duration": 0.4 }
     }
   },
-  "backgroundMask": {
-    "enable": true,
-    "cover": {
-      "value": {
-        "r": 0,
-        "g": 0,
-        "b": 0
-      }
+  "particles": {
+    "color": { "value": "#126e40" },
+    "move": {
+      "bounce": false,
+      "direction": "none",
+      "enable": true,
+      "outModes": "out",
+      "random": false,
+      "speed": 2,
+      "straight": false
+    },
+    "number": { "density": { "enable": true, "area": 800 }, "value": 80 },
+    "opacity": {
+      "value": 0.5
+    },
+    "links": {
+      "enable": true,
+      "color": "#384c6b"
+    },
+    "size": {
+      "value": 3
     }
-  },
-  "retina_detect": true
+  }
 }
+
+
+
+
+
