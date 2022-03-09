@@ -498,15 +498,7 @@ main {
 
 
 /* home */
-.home {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.5))), url(../img/382d52fc8e79381a49cb.jpg);
-    background-image: -o-linear-gradient(left, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/382d52fc8e79381a49cb.jpg);
-    background-image: linear-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/382d52fc8e79381a49cb.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #090909;
-}
+
 
 .home.active,
 .home__content {
